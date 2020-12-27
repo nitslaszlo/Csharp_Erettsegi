@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace P20181025_Kerites
 {
-    class Telek
+    public class Telek
     {
         public int Házszám { get; private set; }
         public int Szélesség { get; private set; }
         public char Szín { get; private set; }
-        public Telek(string[] m, ref int házszám)
+        public Telek(string sor, ref int házszám)
         {
+            string[] m = sor.Split();
             Szélesség = int.Parse(m[1]);
             Szín = m[2][0];
             Házszám = házszám;

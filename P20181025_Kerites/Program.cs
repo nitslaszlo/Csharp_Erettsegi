@@ -17,6 +17,13 @@ namespace P20181025_Kerites
             Console.WriteLine($"\n3. feladat\nA {(m.UtolsóTelek.EzPáratlan ? "páratlan" : "páros")} oldalon adták el az utolsó telket.");
             Console.WriteLine($"Az utolsó telek házszáma: {m.UtolsóTelek.Házszám}");
 
+            Console.Write($"\n4.feladat\nA szomszédossal egyezik a kerítés színe: {m.EgyformaSzínPáratlanOldalon}");
+
+            Console.Write("\n5.feladat\nAdjon meg egy házszámot! ");
+            int inputHázszám = int.Parse(Console.ReadLine());
+
+
+
 
             Console.ReadKey();
         }

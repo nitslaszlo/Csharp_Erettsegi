@@ -15,6 +15,22 @@ namespace P20181025_Kerites
 
         public Telek UtolsóTelek => Telkek.Last();
 
+        public int EgyformaSzínPáratlanOldalon
+        {
+            get
+            {
+                var páratlanTelkek = Telkek.Where(x => x.EzPáratlan).ToList();
+                for (int i = 0; i < páratlanTelkek.Count; i++)
+                {
+                    if (char.IsLetter(páratlanTelkek[i].Szín) && páratlanTelkek[i].Szín == páratlanTelkek[i + 1].Szín)
+                    {
+                        return páratlanTelkek[i].Házszám;
+                    }
+                }
+                return -1;
+            }
+        }
+
         public Megoldás(string forrás)
         {
             int aktuálisPáratlan = 1, aktuálisPáros = 2;

@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Text;
-using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace P20191025_Kerites_Tests
+namespace P20191025_KeritesTests
 {
     [TestClass]
     public class TelekTest
@@ -19,28 +17,28 @@ namespace P20191025_Kerites_Tests
         }
 
         [TestMethod]
-        public void TestHázszám()
+        public void HázszámTest()
         {
             Assert.AreEqual(1, telek1.Házszám);
             Assert.AreEqual(2, telek2.Házszám);
         }
 
         [TestMethod]
-        public void TestSzélesség()
+        public void SzélességTest()
         {
             Assert.AreEqual(10, telek1.Szélesség);
             Assert.AreEqual(33, telek2.Szélesség);
         }
 
         [TestMethod]
-        public void TestSzín()
+        public void SzínTest()
         {
             Assert.AreEqual('P', telek1.Szín);
             Assert.AreEqual(':', telek2.Szín);
         }
 
         [TestMethod]
-        public void TestEzPáratlan()
+        public void EzPáratlanTest()
         {
             Assert.AreEqual(true, telek1.EzPáratlan);
             Assert.AreEqual(false, telek2.EzPáratlan);

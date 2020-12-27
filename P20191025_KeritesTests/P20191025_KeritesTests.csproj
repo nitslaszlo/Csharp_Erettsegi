@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{19EB6C93-1057-4695-A3ED-2EA3BC1B0CDB}</ProjectGuid>
+    <ProjectGuid>{9FFE0502-3290-40B5-A7E8-1ECEA5633CF7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>P20191025_Kerites_Tests</RootNamespace>
-    <AssemblyName>P20191025_Kerites_Tests</AssemblyName>
+    <RootNamespace>P20191025_KeritesTests</RootNamespace>
+    <AssemblyName>P20191025_KeritesTests</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
